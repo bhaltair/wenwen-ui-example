@@ -41,6 +41,7 @@ body {
   color: #333;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  font-size: 14px;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
