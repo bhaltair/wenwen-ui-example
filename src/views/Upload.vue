@@ -18,7 +18,9 @@ export default {
       // reture false 终止读取文本
       return true;
     },
-    afterRead() {},
+    afterRead(files) {
+      console.log(files);
+    },
     successFn() {},
     uploadErr() {},
     progressFn() {},

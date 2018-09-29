@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="p20">
+  <div >
     <wen-button type="primary" size="normal" @click.native="toggleSow">spinner show</wen-button>
   </div>
 </template>

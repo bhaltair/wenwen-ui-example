@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="p20">
-    <wen-button type="primary" size="normal" @click.native="toggleSow">toast show</wen-button>
+  <div >
+    <wen-button type="primary" size="normal" @click.native="toggleSow">action show</wen-button>
     <wen-actionsheet v-model="show" :actions="actions" @select="onselect"/>
   </div>
 </template>
@@ -12,23 +12,23 @@ export default {
       show: false,
       actions: [
         {
-          name: '选项1'
+          name: "选项1"
         },
         {
-          name: '选项2'
+          name: "选项2"
         },
         {
-          name: '选项3'
+          name: "选项3"
         }
       ]
-    }
+    };
   },
   methods: {
-    onselect(index) {
-      console.log(index)
+    onselect(payload) {
+      this.$toast.show("你选中了" + payload.name);
     },
     toggleSow() {
-      this.show = !this.show
+      this.show = !this.show;
     }
   }
 };
