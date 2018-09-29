@@ -1,28 +1,36 @@
 <template>
   <div class="demo-block">
-    <wen-upload :afterRead="afterRead" :beforeRead="beforeRead"></wen-upload>
+    <wen-upload :afterRead="afterRead" :success="successFn" @uploadErr="uploadErr" @changed="progressFn" :beforeRead="beforeRead" :uploadUrl="src" @oversize="onOversize" accept="image/gif, image/jpeg, image/png" multiple >
+      <wen-icon name="upload" ></wen-icon>
+    </wen-upload>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      src: "https://oapi.hemayun.cn/v1/common/upload"
+    };
+  },
   methods: {
-    beforeRead(file) {
+    beforeRead() {
       // reture false 终止读取文本
-      return true
+      return true;
     },
-    afterRead(file) {
-      // 可以读出base64
-      console.log(file)
-    }
+    afterRead() {},
+    successFn() {},
+    uploadErr() {},
+    progressFn() {},
+    onOversize() {}
   }
-}
+};
 </script>
 
 <style lang="scss" >
-  .demo-block {
-    .iconfont {
-      font-size: 30px;
-    }
+.demo-block {
+  .iconfont {
+    font-size: 30px;
   }
+}
 </style>

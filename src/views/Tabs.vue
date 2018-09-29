@@ -18,27 +18,6 @@
       </wen-tab>
     </wen-tabs>
     <div class="padding"></div>
-    <h2>sticky属性</h2>
-    <wen-tabs v-model="active" @click="onClick" sticky :top="0">
-      <wen-tab title="内容1内容1内容1内容1">
-        <p>我是内容1</p>
-        <p>我是内容2</p>
-        <p>我是内容3</p>
-      </wen-tab>
-      <wen-tab title="内容2">
-        <p>我是内容2</p>
-        <p>我是内容2</p>
-        <p>我是内容2</p>
-      </wen-tab>
-      <wen-tab title="内容3">
-        <p>我是内容3</p>
-        <p>我是内容3</p>
-        <p>我是内容3</p>
-      </wen-tab>
-    </wen-tabs>
-    <div class="padding"></div>
-    <div class="padding"></div>
-    <div class="padding"></div>
     <div class="padding"></div>
   </div>
 </template>

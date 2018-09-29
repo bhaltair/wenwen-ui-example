@@ -15,6 +15,7 @@ import SwitchCell from "./views/SwitchCell.vue";
 import Icon from "./views/Icon.vue";
 import Upload from "./views/Upload.vue";
 import ActionSheet from "./views/ActionSheet.vue";
+import Modal from "./views/Modal.vue";
 
 Vue.use(Router);
 
@@ -94,6 +95,11 @@ export default new Router({
       path: "/actionSheet",
       name: "actionSheet",
       component: ActionSheet
+    },
+    {
+      path: "/modal",
+      name: "modal",
+      component: Modal
     }
   ]
 });

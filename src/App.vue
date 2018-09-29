@@ -48,14 +48,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  // padding-top: 44px;
 }
-.fixed {
-  // position: fixed !important;
-  // top: 0;
-  // z-index: 2000;
-}
-.p20 {
+.p20,
+.content {
   padding: 20px;
 }
 </style>

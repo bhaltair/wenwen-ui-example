@@ -6,7 +6,7 @@
     <router-link to="/icon">Icon</router-link>
     <router-link to="/cell">Cell</router-link>
     <router-link to="/list">List</router-link>
-    <router-link to="/loading">Loading</router-link>
+    <!-- <router-link to="/loading">Loading</router-link> -->
     <router-link to="/navbar">Navbar</router-link>
     <router-link to="/toast">Toast</router-link>
     <router-link to="/spinner">Spinner</router-link>
@@ -15,6 +15,7 @@
     <router-link to="/switch-cell">SwitchCell</router-link>
     <router-link to="/upload">Upload</router-link>
     <router-link to="/actionsheet">ActionSheet</router-link>
+    <router-link to="/modal">Modal</router-link>
   </div>
 </template>
 
@@ -41,7 +42,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  padding: 20px;
   a {
     display: block;
     border: 0.5px solid #ccc;
